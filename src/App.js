@@ -1,25 +1,20 @@
-import logo from './logo.svg';
+import React from "react";
 import './App.css';
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="container">
+        <div className="card col-7 mt-5 border-0 shadow-sm p-3 mb-5 bg-body rounded">
+          <h3 className="m-3">Weather App</h3>
+          <form>
+            <div className="search d-flex flex-row m-3">
+              <input type="search" className="input-search form-control bg-light border-0" placeholder="Enter City ......"  autoFocus="on"/>
+              <button type="submit" className=" btn btn-primary w-50">Search</button>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
   );
 }
-
-export default App;
