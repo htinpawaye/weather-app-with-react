@@ -1,5 +1,5 @@
 import React from "react";
-import Weather from "./weather";
+import Weather from "./Component/weather";
 import './App.css';
 
 export default function App() {
@@ -9,14 +9,7 @@ export default function App() {
         <div className="card col-7 mt-5 border-0 shadow-sm p-3 mb-5 bg-body rounded">
           {/* head */}
           <h3 className="m-3">Weather App</h3>
-          {/* search engine */}
-          <form>
-            <div className="search d-flex flex-row m-3">
-              <input type="search" className="input-search form-control bg-light border-0" placeholder="Enter City ......" autoFocus={true} />
-              <button type="submit" className=" btn btn-primary w-50">Search</button>
-            </div>
-          </form>
-          {/* weather info */}
+          {/* search engine */}{/* weather info */}
           <Weather city="Lisbon"/>
           {/* footer */}
           <footer className="m-3">
