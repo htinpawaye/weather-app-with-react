@@ -1,0 +1,8 @@
+.weather-temperature .temp{
+    font-size: 60px;
+    line-height: 1;
+}
+.weather-temperature .unit{
+    position: relative;
+    top:-30px;
+}

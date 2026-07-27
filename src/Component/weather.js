@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import "../Css/weather.css";
 import FormattedDate from "./formattedDate";
+import WeatherTemperature from "../Component/weatherTemperature";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({loaded: false});
@@ -68,12 +69,7 @@ export default function Weather(props) {
             className="me-1"
           />
           <div className="temperature d-flex flex-row align-items-start">
-            <span className="fw-bold fs-1 lh-1">{weatherData.temperature}</span>
-            <span className="unit ms-1 fs-6">
-              <a href="/" className="text-decoration-none text-dark fw-bold">°C</a>
-              <span className="text-muted mx-1">|</span>
-              <a href="/" className="text-decoration-none text-primary">°F</a>
-            </span>
+            <WeatherTemperature temperature={weatherData.temperature} />
           </div>
         </div>
 
